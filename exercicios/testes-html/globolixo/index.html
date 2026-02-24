@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1</title>
+    <style>
+
+
+.linha-vertical{
+        border-left: 0.5px solid rgba(128, 128, 128, 0.20);
+        margin: 0 10px;
+}
+.linha-vertical-abaixo{
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.20);
+}
+hr{
+    
+    border: none;
+    height: 0.5px;
+    background-color: rgba(128, 128, 128, 0.2);
+
+}
+        @font-face {
+            font-family: 'bold';
+            src: url(fontes/Globotipo-Bold.ttf);
+        }
+        @font-face {
+            font-family: 'semibold';
+            src: url(fontes/Globotipo-Semibold.ttf);
+        }
+        @font-face {
+            font-family: 'ligth';
+            src: url(fontes/Globotipo-Regular.ttf);
+        }
+        body{
+            margin: 0;
+            align-items: center;
+        }
+        table{
+            width: 1300px;
+            margin:auto;
+            border-collapse: separate;
+            border-spacing: 30px 10px;
+        }
+        table#topline{
+            width: 1300px;
+            border-collapse: separate;
+            border-spacing: 30px 0px;
+            padding-top: 15px;
+        }
+        td{
+            vertical-align: top;
+        }
+
+        /*
+        menor
+        w: 175.45
+        h: 96px
+        ----
+        maior
+        w: 213.33
+        h:96
+        */
+        img{
+            margin: 0%;
+            width: 185px;
+            height: 110px;
+            border-radius: 15px;
+        }
+        .colunas{
+            width: 227px;
+            height: 128px;
+        }
+        .image{
+            text-align: left;
+        }
+
+        .igual-1{
+            /*cinza do topo*/
+            color: #2F3134;
+            font-family: "light";
+            font-size: 14px;
+            font-weight: normal;
+
+        }
+
+
+/*h1 e h2 - bold 
+h3 - regular
+
+letter-spacing --- lateral
+line-height ------ vertical
+*/
+        .titulo-principal{
+            color: rgb(196, 23, 12);
+            font-size: 56px;
+            letter-spacing: -3.1px;
+            line-height: 67.2px;
+            font-family: "bold";
+
+        }
+        .sub-titulo-principal{
+            color: #2F3134;
+            font-size: 18px;
+            letter-spacing: -0.5px;
+            line-height: 21.6px;
+            font-family: "semibold";
+
+        }
+        .igual-2{
+            /*vinho dos títulos principais*/
+            color: rgb(196, 23, 12);
+            font-family: bold;
+            font-size: 20px;
+            letter-spacing: -0.6;
+            line-height: 24px;
+
+
+        }
+        h3.igual-3{
+            /*cinza do resumo das notícias*/
+            color: #2F3134;
+            font-family: "light";
+            font-size: 15px;
+            font-weight: normal;
+            letter-spacing: -0.2;
+            line-height: 22.5px;
+        }
+        h2.igual-4{
+            /*verde da primeira coluna*/
+            color: #06AA48;
+            font-family: bold;
+            font-size: 20px;
+            letter-spacing: -0.6px;
+            line-height: 24px;
+        }
+        h2.igual-5{
+            /*laranja da segunda coluna*/
+            color: #FF6700;
+            font-family: bold;
+            font-size: 20px;
+            letter-spacing: -0.6px;
+            line-height: 24px;
+        }
+        
+
+/*------------------------------------------TOP-LINE----------------------------------*/
+/*------------------------------------------TOP---------------------------------------*/
+        .menu{
+            font-size: 14px;
+            line-height: 16.8px;
+            letter-spacing: -0.2;
+
+        }
+        .globodotcom{
+            text-align: center;
+            font-size: 36px;
+            font-family: bold;
+            background: linear-gradient(to right, #0420FC,  #04ABFC);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+            line-height: 40px;
+            letter-spacing: -0.3;
+        }
+        .lucas{
+            text-align: center;
+            line-height: 24px;
+            letter-spacing: -0.3;
+            border-right: 1px solid rgba(128, 128, 128, 0.20);
+            margin: 0 10px;
+        }
+        .busca{
+            /*color: ;*/
+            line-height: 24px;
+            letter-spacing: -0.3;
+        }
+/*------------------------------------------MIDDLE---------------------------------------*/
+        .g1{
+            color: #C4170C;
+            font-family: bold;
+            line-height: 24px;
+            letter-spacing: -0.3;
+        }
+        .oglobo{
+            text-align: center;
+            color: #1E4C9A;
+            font-family: bold;
+            line-height: 24px;
+            letter-spacing: -0.3;
+        }
+        .valor{
+            color: #006767;
+            font-family: bold;
+            line-height: 24px;
+            letter-spacing: -0.3;
+        }
+        .ge{
+            color: #06AA48;
+            font-family: bold;
+            line-height: 24px;
+            letter-spacing: -0.3;
+        }
+        .cartola{
+            color: #FF7400;
+            font-family: bold;
+            line-height: 24px;
+            letter-spacing: -0.3;
+        }
+        .globoplay{
+            color:  #F50234;
+            font-family: bold;
+            line-height: 24px;
+            letter-spacing: -0.3;
+        }
+        .gshow{
+            color: #FF6700;
+            font-family: bold;
+            line-height: 24px;
+            letter-spacing: -0.3;
+        }
+        .receitas{
+            color: #A5147D;
+            font-family: bold;
+            line-height: 24px;
+            letter-spacing: -0.3;
+        }
+        .quem{
+            color: #333333;
+            font-family: bold;
+            line-height: 24px;
+            letter-spacing: -0.3;
+        }
+        .g1-jogos{
+            color: #C4170C;
+            font-family: bold;
+            line-height: 24px;
+            letter-spacing: -0.3;
+        }
+        
+/*------------------------------------------LOW---------------------------------------*/        
+        .previtemp{
+            /*color: ;*/
+            font-size: 12px;
+            font-family: bold;
+            line-height: 18px;
+            letter-spacing: 0px;
+        }
+        .mini{
+            width: 20px;
+            height: 20px;
+            margin: 0px;
+
+        }
+/*--------------------------------------------------------------------------------------*/
+/* 
+
+Estilos tirados do site
+
+
+cores
+--------Menu--------
+globo.com - degradê - 4, 32, 252 --> 3, 171, 252 
+g1 - #C4170C//240, 48, 24  
+o globo - #1E4C9A//75, 112, 174  
+valor -  #006767//51, 133, 133  
+ge -  #06AA48//31, 178, 90
+cartola -  #FF7400//255, 144, 51
+globoplay -  #F50234//252, 53, 93
+gshow -  #FF6700//255, 133, 51
+receitas -  #A5147D//183, 62, 151
+quem -  #333333//92, 92, 92
+g1 jogos -  #C4170C//240, 48, 24
+--------Corpo de notícias principal--------
+h1 -  #C4170C
+bolinha -  #C4170C 
+h2 -  #2F3134//#06AA48//
+h3 -  #FF6700//#FF6700
+
+------------------------------------------------
+Fontes
+
+--------Menu--------
+
+--------Corpo de notícias principal--------
+h1 
+bolinha  
+h2 
+h3 
+*/
+
+    </style>
+</head>
+<body>
+
+    <!--TOPO/MENU-->
+    <table id="topline">
+        <tr>
+            <td class="igual-1, menu" colspan="2"><img src="" alt="" class="mini" >Menu</td>
+            <div><td class="globodotcom" colspan="6">globo.com</td></div>
+            <div><td class="igual-1, lucas">Lucas<img src="" alt="" class="mini"></td></div>
+            <td class="igual-1, busca">Busca<img src="" alt="" class="mini"></td>
+            </div>
+        </tr>
+        <tr>
+            <td colspan="10">
+                <hr>
+            </td>
+        </tr>
+        <tr>
+            <td class="g1" style="width: 50px;">g1</td>
+            <td class="oglobo">o globo</td>
+            <td class="valor">valor</td>
+            <td class="ge">ge</td>
+            <td class="cartola">cartola</td>
+            <td class="globoplay">globoplay</td>
+            <td class="gshow">gshow</td>
+            <td class="receitas">receitas</td>
+            <td class="quem">quem</td>
+            <td class="g1-jogos">g1 jogos</td>
+        </tr>
+        <tr>
+            <td colspan="10">
+                <hr>
+            </td>
+        </tr>
+        <tr>
+            <td class="previtemp" colspan="2" style="width: 160px;">Previsão do tempo</td>
+        </tr>
+        <tr>
+            <td colspan="10">
+                <hr>
+            </td>
+        </tr>
+    </table>
+    <!----------------------------------------------->
+    <table>
+        <!--Título principal-->
+        
+        <tr>
+            <td colspan="3" class="linha-vertical-abaixo">
+                <h1 class="titulo-principal" >TESTE<h1>
+                <h2 class="sub-titulo-principal">TESTE</h2>
+                <h2 class="sub-titulo-principal">TESTE</h2>
+            </td>
+
+            <td rowspan="5" class="linha-vertical"></td><!-- LINHA VERTICAL-->
+
+            <!--Colunas "separadas"-->
+            <td rowspan="4">
+                <div class="image"><img src="imagens/" alt="" class="colunas"></div>
+                <h2 class="igual-4">TESTE</h2>
+                <br>
+                <h2 class="igual-4" class="colunas">TESTE</h2>
+                <br>
+                <h3 class="igual-3"></h3>
+                <div class="image"><img src="imagens/" alt="" class="colunas"></div>
+                <h2 class="igual-4">TESTE</h2>
+                <br>
+                <div class="image"><img src="imagens/" alt="" class="colunas"></div>
+                <h2 class="igual-4">TESTE</h2>
+            </td>
+
+            <td rowspan="5" class="linha-vertical"></td><!-- LINHA VERTICAL-->
+
+            <td rowspan="4" >
+                <div class="image"><img src="imagens/" alt="" class="colunas"></div>
+                <h2 class="igual-5">TESTE</h2>
+                <br>
+                <h2 class="igual-5">TESTE</h2>
+                <br>
+                <div class="image"><img src="imagens/" alt="" class="colunas"></div>
+                <h2 class="igual-5">TESTE</h2>
+            </td>
+            <!----------------------->
+        </tr>
+        
+        <!--Fotos e manchetes 1 [modelo]-->
+        <!--fotos com w:629 h:324 -->
+        <tr>
+            <td>
+                <div class="image"><img src="imagens/" alt=""></div>
+                <h2 class="igual-2">TESTE</h2>
+                <h3 class="igual-3">TESTE</h3>
+            </td>
+            <td>
+                <div class="image"><img src="imagens/" alt=""></div>
+                <h2 class="igual-2">TESTE</h2>
+                <h3 class="igual-3">TESTE</h3>
+            </td>
+            <td>
+                <div class="image"><img src="imagens/" alt=""></div>
+                <h2 class="igual-2">TESTE</h2>
+                <h3 class="igual-3">TESTE</h3>
+            </td>
+        </tr>
+        <!--Quebra de Linha-->
+        <tr style="height: 1px;">
+            <td colspan="3">
+                <hr>
+            </td>
+        </tr>
+        <!--Fotos e manchetes 2 -->
+        <!--fotos com w:629 h:324 -->
+        <tr>
+            <td>
+                <div class="image"><img src="imagens/" alt=""></div>
+                <h2 class="igual-2">TESTE</h2>
+                <h3 class="igual-3">TESTE</h3>
+            </td>
+            <td>
+                <div class="image"><img src="imagens/" alt=""></div>
+                <h2 class="igual-2">TESTE</h2>
+                <h3 class="igual-3">TESTE</h3>
+            </td>
+            <td>
+                <div class="image"><img src="imagens/" alt=""></div>
+                <h2 class="igual-2">TESTE</h2>
+                <h3 class="igual-3">TESTE</h3>
+            </td>
+        </tr>
+        <!--Quebra de Linha
+        <tr>
+            <td colspan="3">
+                <hr>
+            </td>
+        </tr>-->
+    </table>
+    
+    
+
+</body>
+</html>
